@@ -17,7 +17,10 @@ const WelcomeScreen = ({ navigation }) => {
         </Text>
       </View>
       <View>
-        <Pressable style={styles.button} onPress={() => navigation.navigate("Suscribe")}>
+        <Pressable
+          style={styles.button}
+          onPress={() => navigation.navigate("Suscribe")}
+        >
           <Text style={styles.buttonText}>Newsletter</Text>
         </Pressable>
       </View>
@@ -37,23 +40,23 @@ const styles = StyleSheet.create({
     margin: 120,
   },
   text: {
-    textAlign: 'center',
-    fontWeight: 'bold',
+    textAlign: "center",
+    fontWeight: "bold",
     fontSize: 20,
-    paddingHorizontal:20
+    paddingHorizontal: 20,
   },
   button: {
-    backgroundColor: '#3E524B',
+    backgroundColor: "#3E524B",
     marginBottom: 60,
     height: 30,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
     marginHorizontal: 30,
-    borderRadius: 5
+    borderRadius: 5,
   },
   buttonText: {
-    color: 'white'
-  }
+    color: "white",
+  },
 });
 
 export default WelcomeScreen;
